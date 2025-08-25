@@ -247,7 +247,7 @@ while os.getenv(f"IG_USER_{idx}"):
     idx += 1
 
 # 建議在 Zeabur 將此目錄掛到 Persistent Storage
-IG_SETTINGS_DIR = os.getenv("IG_SETTINGS_DIR", "ig_settings")
+IG_SETTINGS_DIR = os.getenv("IG_SETTINGS_DIR", "/data/ig_settings")
 os.makedirs(IG_SETTINGS_DIR, exist_ok=True)
 
 #  SETTINGS_DIR = "ig_settings"  # 存放 cookies/session 的目錄
